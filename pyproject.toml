@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "scrub"
+version = "0.1.1"
+authors = ["Dotan Nahum <jondotan@gmail.com>"]
+description = "Scrub sensitive fields for production and data that keeps changing for testing."
+
+license = "MIT"
+
+readme = "README.md"
+
+homepage = "https://github.com/jondot/scrub"
+repository = "https://github.com/jondot/scrub"
+documentation = "https://github.com/jondot/scrub"
+
+keywords = ["dict", "data", "nested", "functional"]
+
+[tool.poetry.dependencies]
+python = "*"
+toolz = "^0.9.0"
+cytoolz = "^0.9.0"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.20"
+pytest-jest = "^0.3.0"
+pytest = "^3.0"
+pytest-benchmark = "^3.1"
+pytest-testmon = "^0.9.13"
+pytest-watch = "^4.2"
+snapshottest = "^0.5.0"
+
+flake8 = { version = "^3.5", optional = true }
+flake8-mypy = { version = "^17.8", optional = true }
+
+[tool.poetry.extras]
+lint = ["flake8", "flake8-mypy"]
