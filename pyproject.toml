@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scrub"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Dotan Nahum <jondotan@gmail.com>"]
 description = "Scrub sensitive fields for production and data that keeps changing for testing."
 
